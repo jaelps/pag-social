@@ -1,0 +1,272 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hwb(300 95% 3%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.titulo{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.subtitulo{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 400;
+}
+
+
+.avaliacao_box{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 5px;
+}
+
+.avaliacao_text{
+    font-weight: 500;
+    color: var(--Very-Dark-Magenta);
+}
+
+.comentario{
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+}
+
+.comentario_text{
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.foto > img{
+    border-radius:40px;
+    width: 35px;
+}
+
+.perfil_nome{
+    color: var(--White);
+    margin: 0 0 2px 0;
+}
+
+.perfil_descri{
+    color: var(--Soft-Pink);
+    margin: 2px 0 0 0;
+}
+
+.comentario_text{
+    color: var(--White);
+}
+
+
+@media screen and (max-width: 375px){
+    body{
+        background: url(images/bg-pattern-top-mobile.svg) top no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+        background-size: 30px;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .texto-inicial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 280px;
+    }
+
+    .titulo{
+        text-align: center;
+        width: 260px;
+        font-size: 40px;
+    }
+
+    .subtitulo{
+        text-align: center;
+        width: 280px;
+    }
+
+    .avalicao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avaliacao_text{
+        margin-top: 10px;
+    }
+
+    .avaliacao_box{
+        width: 280px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .box-comentario{
+        margin: 20px 0;
+    }
+
+    .comentario{
+        width: 240px;
+        padding: 20px;
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comentario_perfil{
+        display: flex;
+    }
+
+    .perfil{
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .comentario_text{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(images/bg-pattern-top-desktop.svg) top left no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+        background-size: 800px;
+    }
+
+    .box{
+        padding: 80px 50px;
+        width: 1200px;
+        height: 700px;
+    }
+
+    .box_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .texto-inicial{
+        margin: 0 0 0 18px;
+    }
+
+    .titulo{
+        margin: 0;
+        text-align: left;
+        width: 500px;
+        font-size: 70px;
+        letter-spacing: -3px;
+    }
+
+    .subtitulo{
+        text-align: left;
+        width: 600px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .avaliacao_box{
+        width: 280px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .avaliacao_text{
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    .avalicao_star{
+        margin: 0 20px 0 0;
+    }
+
+    .reviews{
+        margin: 0 0 15px -180px;
+        width: 420px;
+        height: 60px;
+    }
+
+    .guru{
+        margin: 0 0 15px -120px;
+        width: 470px;
+        height: 60px;
+    }
+
+    .tech{
+        margin: 0 0 0 -30px;
+        width: 420px;
+        height: 60px;
+    }
+
+    .box-comentario{
+        display: flex;
+        margin-top: 80px;
+    }
+
+    .comentario{
+        padding: 30px;
+        margin: 0 15px;
+        width: 350px;
+        height: 180px;
+    }
+
+    .comentario_perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .perfil{
+        margin: 0 0 0 20px;
+    }
+
+    .perfil_nome{
+        margin: 0 0 5px 0;
+    }
+
+    .colton{
+        width: 300px;
+        height: 150px;
+    }
+
+    .irene{
+        margin: 30px 15px 0 0;
+        width: 300px;
+        height: 150px;
+    }
+
+    .anne{
+        margin: 60px 0 0 0;
+        width: 300px;
+        height: 150px;
+    }
+
+    .comentario_text{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+}
