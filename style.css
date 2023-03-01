@@ -62,85 +62,6 @@
     color: var(--White);
 }
 
-
-@media screen and (max-width: 375px){
-    body{
-        background: url(images/bg-pattern-top-mobile.svg) top no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
-        background-size: 30px;
-    }
-
-    .box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 10px;
-    }
-
-    .texto-inicial{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 280px;
-    }
-
-    .titulo{
-        text-align: center;
-        width: 260px;
-        font-size: 40px;
-    }
-
-    .subtitulo{
-        text-align: center;
-        width: 280px;
-    }
-
-    .avalicao{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .avaliacao_text{
-        margin-top: 10px;
-    }
-
-    .avaliacao_box{
-        width: 280px;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 15px 0;
-    }
-
-    .box-comentario{
-        margin: 20px 0;
-    }
-
-    .comentario{
-        width: 240px;
-        padding: 20px;
-        margin: 15px 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .comentario_perfil{
-        display: flex;
-    }
-
-    .perfil{
-        margin: 0 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .comentario_text{
-        font-size: 15px;
-    }
-}
-
 @media screen and (max-width: 1440px) {
     body{
         display: flex;
@@ -159,7 +80,7 @@
     .box_top{
         display: flex;
         justify-content: space-between;
-        width: 94%;
+        width: 70%;
     }
 
     .texto-inicial{
@@ -193,33 +114,33 @@
 
     .avaliacao_text{
         font-weight: 600;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .avalicao_star{
-        margin: 0 7px 3px 0;
+        margin: 0 7px 0 0;
     }
 
     .estrela{
-        width: 7px;
+        width: 12px;
     }
 
     .reviews{
-        margin: 0 0 8px -180px;
-        width: 180px;
-        height: 25px;
+        margin: 0 0 15px -180px;
+        width: 200%;
+        height: 20%;
     }
 
     .guru{
-        margin: 0 0 8px -140px;
-        width: 190px;
-        height: 25px;
+        margin: 0 0 15px -140px;
+        width: 200%;
+        height: 20%;
     }
 
     .tech{
         margin: 0 0 0 -80px;
-        width: 180px;
-        height: 25px;
+        width: 200%;
+        height: 20%;
     }
 
     .box-comentario{
@@ -251,19 +172,19 @@
     }
 
     .colton{
-        width: 150px;
+        width: 20%;
         height: 100px;
     }
 
     .irene{
         margin: 10px 15px 0 0;
-        width: 150px;
+        width: 20%;
         height: 100px;
     }
 
     .anne{
         margin: 25px 0 0 0;
-        width: 150px;
+        width: 20%;
         height: 100px;
     }
 
@@ -275,5 +196,119 @@
 
     .foto > img{
         width: 25px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background: url(images/bg-pattern-top-mobile.svg) top no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+        background-size: 30px;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .box_top{
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        align-items: center;
+    }
+
+    .texto-inicial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 280px;
+        margin: 0;
+    }
+
+    .titulo{
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .subtitulo{
+        text-align: center;
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .avaliacao{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .avaliacao_text{
+        margin: 10px 0 0 0;
+        font-size: 15px;
+    }
+
+    .avaliacao_box{
+        width: 99%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 8px 0;
+    }
+
+    .estrela{
+        width: 15px;
+    }
+
+    .box-comentario{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comentario{
+        width: 240px;
+        padding: 20px;
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colton{
+        width: 70%;
+        height: 80%;
+    }
+
+    .irene{
+        margin: 0 0 0 0;
+        width: 70%;
+        height: 80%;
+    }
+
+    .anne{
+        margin: 15px 0 0 0;
+        width: 70%;
+        height: 80%;
+    }
+
+    .comentario_perfil{
+        display: flex;
+    }
+
+    .perfil{
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .comentario_text{
+        font-size: 15px;
+        line-height: 18px;
     }
 }
